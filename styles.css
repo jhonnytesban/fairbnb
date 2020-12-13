@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  padding-right: 100px;
   height: 80px;
   align-items: center;
   position: sticky;
@@ -19,6 +18,12 @@
 @media only screen and (max-width: 800px) {
   .header {
     padding: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 50px;
+    padding: 0 5px;
   }
 }
 
@@ -32,6 +37,11 @@
 @media only screen and (max-width: 800px) {
   .menu__list {
     font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .menu__list {
+    font-size: 0.8em;
   }
 }
 
@@ -54,6 +64,11 @@
     width: 200px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+  }
+}
 
 .slider {
   width: 100%;
@@ -68,6 +83,11 @@
 @media only screen and (max-width: 800px) {
   .slider {
     height: 350px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .slider {
+    height: 250px;
   }
 }
 
@@ -121,6 +141,11 @@
 @media only screen and (max-width: 1100px) {
   .img1 {
     object-position: 0 -150px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .img1 {
+    object-position: 0 0;
   }
 }
 
@@ -181,10 +206,6 @@
   }
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .main {
   background-color: rgba(151, 178, 163, 0.13);
   padding-top: 100px;
@@ -215,9 +236,32 @@
     margin: 50px 50px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .article {
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .article2 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-img {
+    margin: auto;
+  }
+}
 
 .img__card {
   width: 250px;
+}
+@media only screen and (max-width: 600px) {
+  .img__card {
+    width: 150px;
+  }
 }
 
 .container-info {
@@ -226,6 +270,11 @@
 @media only screen and (max-width: 800px) {
   .container-info {
     padding: 20px 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-info {
+    padding: 10px 10px;
   }
 }
 
@@ -237,6 +286,11 @@
   text-align: center;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 1.5em;
+  }
+}
 
 .article__text {
   font-family: "Open Sans", sans-serif;
@@ -245,6 +299,11 @@
   color: #005a00;
   text-align: center;
   margin-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .article__text {
+    font-size: 0.8em;
+  }
 }
 
 .button {
@@ -316,6 +375,11 @@
   margin-bottom: 50px;
   margin-top: 50px;
 }
+@media only screen and (max-width: 600px) {
+  .video__subtitle {
+    font-size: 2em;
+  }
+}
 
 .video__info {
   padding: 0 350px;
@@ -330,6 +394,11 @@
     padding: 0 100px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .video__info {
+    padding: 0 20px;
+  }
+}
 .video__info .info__text {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -337,6 +406,11 @@
   font-weight: 600;
   font-size: 40px;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .video__info .info__text {
+    font-size: 2em;
+  }
 }
 .video__info .info {
   text-align: center;
@@ -358,12 +432,22 @@
   border-radius: 20px;
   background-color: #fcb900;
 }
+@media only screen and (max-width: 600px) {
+  .button-rtc {
+    width: 60%;
+  }
+}
 .button-rtc .link__rtc {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.2em;
   text-decoration: none;
   color: #000;
+}
+@media only screen and (max-width: 600px) {
+  .button-rtc .link__rtc {
+    font-size: 1em;
+  }
 }
 
 .footer {
@@ -377,6 +461,11 @@
     padding: 20px 25px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .footer {
+    padding: 20px 10px;
+  }
+}
 
 .container-footer {
   max-width: 200px;
@@ -388,12 +477,23 @@
     max-height: 100px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .container-footer {
+    max-width: 100px;
+    max-height: 80px;
+  }
+}
 .container-footer .footer__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: #757575;
   text-align: center;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 600px) {
+  .container-footer .footer__text {
+    font-size: 0.8em;
+  }
 }
 .container-footer .footer__img {
   max-width: 100%;
@@ -410,10 +510,15 @@
     max-height: 150px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .footer :nth-child(1) {
+    max-width: 150px;
+    max-height: 100px;
+  }
+}
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */
